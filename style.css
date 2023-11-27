@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-lb: rgb(95, 113, 175);
+  --color-db: rgb(39, 39, 108);
+  --color-w: white;
+  --color-g: rgba(0, 0, 0, 0.563);
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: var(--color-lb);
+  display: flex;
+  justify-content: center;
+  color: var(--color-db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--color-w);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px var(--color-g);
+}
+
+h1 {
+  margin-block: 0;
+  font-size: 2.5rem;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-all,
+.filter-open,
+.filter-done {
+  margin-right: 1rem;
+}
+
+#all-checkbox,
+#open-checkbox,
+#done-checkbox {
+  height: 0.8rem;
+  width: 0.8rem;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: var(--color-w);
+  border: 0.1rem solid var(--color-db);
+  border-radius: 0.5rem;
+  color: var(--color-db);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: var(--color-db);
+  color: var(--color-w);
+}
+
+.input-field {
+  background-color: var(--color-w);
+  border: 0.1rem solid var(--color-db);
+  border-radius: 0.5rem;
+  color: var(--color-db);
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.add-btn {
+  background-color: var(--color-db);
+  border: 0.1rem solid var(--color-db);
+  border-radius: 0.5rem;
+  color: var(--color-w);
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+}
+.add-btn:hover {
+  background-color: var(--color-w);
+  border: 0.1rem solid var(--color-db);
+  color: var(--color-db);
+  cursor: pointer;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.todo {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.todo-checkbox {
+  background-color: var(--color-w);
+  border: 0.1rem solid var(--color-db);
+  border-radius: 0.5rem;
+  color: var(--color-db);
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
